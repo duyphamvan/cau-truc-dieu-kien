@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var name = prompt("Who's there?",'');
+		var password = prompt("Password?",'');
+		if (name == 'Admin') {
+		    if (password == 'TheMaster') {
+		        document.write("Welcome");
+		    } else if (password == null){
+		    	document.write("Canceld");
+		    }
+		} else if(name == null) {
+		    document.write("Canceld");
+		} else{
+			document.write("I don't know you");
+		}
+	</script>
+</body>
+</html>

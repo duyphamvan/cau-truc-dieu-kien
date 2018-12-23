@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var mess;
+		var login = prompt("Message : ");
+		/*if (login == 'Employee') {
+		  mess = 'Hello';
+		} else if (login == 'Director') {
+		  mess = 'Greetings';
+		} else if (login == '') {
+		 mess = 'No login';
+		} else {
+		  mess = '';
+		}*/
+		 var mess = (login =='Employee') ? 'Hello' : (login == 'Director') ? 'Greetings' : (login == '') ? 'No login' : '';
+		 alert(mess);
+
+	</script>
+</body>
+</html>

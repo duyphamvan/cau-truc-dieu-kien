@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h2  style="position:absolute; left:220px; top:175px;">Do you love me?</h2>
+	<button type="button" value="Yes" id="yes" onclick="show();"  style="position:absolute; left:285px; top:235px;">YES</button>
+	<button type="button" value="No" id="no" onmouseover="mover();" style="position:absolute; left:360px; top:235px;">NO</button>
+	<script>
+		function show() {
+			alert('Do you love me ?');
+		}
+		function mover() {
+			var no = document.getElementById('no');
+			var a = Math.round(Math.random() * window.innerWidth);
+			var b = Math.round(Math.random() * window.innerHeight);
+			no.style.left = a + 'px';
+			no.style.top = b + 'px';
+		}
+
+	</script>
+</body>
+</html>
